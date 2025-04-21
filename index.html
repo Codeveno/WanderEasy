@@ -5,46 +5,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WanderEasy - Plan Your Adventure</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>WanderEasy</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="planner.html">Planner</a></li>
-                <li><a href="itinerary.html">Itinerary</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <div class="container">
+            <h1>WanderEasy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                    <li><a href="#destinations" class="nav-link" data-section="destinations">Destinations</a></li>
+                    <li><a href="#planner" class="nav-link" data-section="planner">Planner</a></li>
+                    <li><a href="#itinerary" class="nav-link" data-section="itinerary">Itinerary</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main class="container">
-        <section class="hero">
-            <h2>Plan Your Dream Trip</h2>
-            <p>Explore destinations, create itineraries, and book activities with ease.</p>
-            <a href="planner.html" class="cta">Start Planning</a>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section hero active">
+            <div class="container">
+                <h2>Plan Your Dream Adventure</h2>
+                <p>Discover breathtaking destinations, create personalized itineraries, and travel with ease.</p>
+                <a href="#planner" class="cta nav-link" data-section="planner">Start Planning Now</a>
+                <div class="features">
+                    <h3>Why WanderEasy?</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h4>Personalized Planning</h4>
+                            <p>Tailor your trip with our intuitive planner.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-globe"></i>
+                            <h4>Global Destinations</h4>
+                            <p>Explore top spots from Paris to Tokyo.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h4>Easy Itineraries</h4>
+                            <p>Generate detailed plans in minutes.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-headset"></i>
+                            <h4>24/7 Support</h4>
+                            <p>Our team is here to assist you anytime.</p>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Tropical beach" class="feature-img">
+                </div>
+                <div class="travel-tips">
+                    <h3>Travel Tips</h3>
+                    <p>Pack light, book early, and carry a reusable water bottle for your adventures!</p>
+                </div>
+            </div>
         </section>
-        <section class="features">
-            <h2>Why Choose WanderEasy?</h2>
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Tropical beach" class="feature-img">
-            <ul>
-                <li>Personalized trip planning</li>
-                <li>Explore top destinations</li>
-                <li>Easy itinerary creation</li>
-                <li>24/7 support</li>
-            </ul>
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="section destinations">
+            <div class="container">
+                <h2>Explore Top Destinations</h2>
+                <p>Discover the best places to visit, from vibrant cities to serene beaches.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbngQ0BWnCSitww4WI2ioN0CzDnbiEV5bQbqet5A&s" alt="Beach destination" class="destination-img">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Place</th>
+                            <th>Destination</th>
+                            <th>Country</th>
+                            <th>Activities</th>
+                            <th>Best Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbngTQAudOk1Z4SsENi9WfB2rQeepH-7YyWdcbMg&s" alt="Paris" class="table-img"></td>
+                            <td>Paris</td>
+                            <td>France</td>
+                            <td>Sightseeing, Museums, Dining</td>
+                            <td>Spring/Fall</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbngT9a_fgcnK9f6AI_UqNukN2KubQLzp3p7ZwEw&s" alt="Bali" class="table-img"></td>
+                            <td>Bali</td>
+                            <td>Indonesia</td>
+                            <td>Beaches, Temples, Yoga</td>
+                            <td>April-September</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbngTMobIoayWpuXIJbYEdGAx9H9c5Ck3Q85kSuw&s" alt="New York" class="table-img"></td>
+                            <td>New York</td>
+                            <td>USA</td>
+                            <td>Broadway, Skyscrapers, Shopping</td>
+                            <td>Fall/Winter</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbngRdbaL9FwsAvJWoi3OxXwaCnIOgewMAehvM2A&s" alt="Tokyo" class="table-img"></td>
+                            <td>Tokyo</td>
+                            <td>Japan</td>
+                            <td>Culture, Technology, Food</td>
+                            <td>Spring/Fall</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Planner Section -->
+        <section id="planner" class="section planner">
+            <div class="container">
+                <h2>Plan Your Perfect Trip</h2>
+                <p>Enter your travel details to create a customized itinerary.</p>
+                <form id="trip-planner">
+                    <div class="form-group">
+                        <label for="destination"><i class="fas fa-map-marker-alt"></i> Destination:</label>
+                        <input type="text" id="destination" name="destination" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date"><i class="fas fa-calendar"></i> Travel Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration"><i class="fas fa-clock"></i> Duration (days):</label>
+                        <input type="number" id="duration" name="duration" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferences"><i class="fas fa-heart"></i> Preferences:</label>
+                        <textarea id="preferences" name="preferences" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="cta">Plan Trip</button>
+                </form>
+                <div class="travel-tips">
+                    <h3>Planning Tip</h3>
+                    <p>Check local festivals or events to enhance your travel experience!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Itinerary Section -->
+        <section id="itinerary" class="section itinerary">
+            <div class="container">
+                <h2>Your Travel Itinerary</h2>
+                <p id="itinerary-details">Your itinerary will appear here after planning.</p>
+                <ol id="itinerary-list"></ol>
+                <div class="travel-tips">
+                    <h3>Itinerary Tip</h3>
+                    <p>Keep a digital copy of your itinerary and share it with family for safety.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Have questions? We're here to help with your travel plans!</p>
+                <div class="contact-grid">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="cta">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Contact Details</h3>
+                        <p><i class="fas fa-envelope"></i> support@wandereasy.com</p>
+                        <p><i class="fas fa-phone"></i> +1-800-WANDER</p>
+                        <div class="map-placeholder">
+                            <p>[Map Placeholder: View our office on Google Maps]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>© 2025 WanderEasy. All rights reserved.</p>
-        <ul class="social-links">
-            <li><a href="https://twitter.com">Twitter</a></li>
-            <li><a href="https://facebook.com">Facebook</a></li>
-            <li><a href="https://instagram.com">Instagram</a></li>
-        </ul>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WanderEasy</h3>
+                    <p>Your ultimate trip planning companion.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                        <li><a href="#destinations" class="nav-link" data-section="destinations">Destinations</a></li>
+                        <li><a href="#planner" class="nav-link" data-section="planner">Planner</a></li>
+                        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul class="social-links">
+                        <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-bottom">© 2025 WanderEasy. All rights reserved.</p>
+        </div>
     </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
